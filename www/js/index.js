@@ -12,6 +12,9 @@
               'Heading: '           + position.coords.heading           + '\n' +
               'Speed: '             + position.coords.speed             + '\n' +
               'Timestamp: '         + position.timestamp                + '\n');
+        
+              document.getElementById("lat").value = position.coords.latitude;
+			  document.getElementById("lng").value = position.coords.longitude;
     };
 
     // onError Callback receives a PositionError object
